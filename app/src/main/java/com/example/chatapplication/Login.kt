@@ -51,6 +51,7 @@ class Login : AppCompatActivity() {
                     //code for login user
 
                     val intent = Intent(this@Login, MainActivity::class.java)
+                    finish()
                     startActivity(intent)
 
                 } else {

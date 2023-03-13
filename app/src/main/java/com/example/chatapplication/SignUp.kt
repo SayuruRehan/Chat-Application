@@ -51,6 +51,7 @@ class SignUp : AppCompatActivity() {
                     addUserToDatabase(name, email, mAuth.currentUser?.uid!!)    //uid got from mAuth and made null safe
                     
                     val intent = Intent(this@SignUp, MainActivity::class.java)
+                    finish()
                     startActivity(intent)
                 } else {
                     Toast.makeText(this@SignUp, "Error Occurred", Toast.LENGTH_SHORT).show()
